@@ -22,11 +22,19 @@ This is a full-stack chat application built with FastAPI, NestJS, and Next.js. T
    ```
    OPENAI_API_KEY=your_openai_api_key
    ```
-3. Run the application:
+3. Create a `.env` file in the `nestjs-service` directory:
+   ```
+   FASTAPI_SERVICE_URL=http://fastapi-service:6000
+   ```
+4. Create a `.env` file in the `frontend-dashboard` directory:
+   ```
+   NEXT_PUBLIC_API_URL=http://localhost:4000
+   ```
+5. Run the application:
    ```bash
    docker-compose up
    ```
-4. Access the application:
+6. Access the application:
    - Frontend: http://localhost:3000
    - NestJS API: http://localhost:4000
    - FastAPI Service: http://localhost:6000
